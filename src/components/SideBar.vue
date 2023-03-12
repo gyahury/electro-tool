@@ -14,7 +14,7 @@
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 550px;">
-                <v-sheet :height="250" :width="500" class="pa-10">
+                <v-sheet :height="250" :width="500" class="pa-12">
                     <router-view />
                 </v-sheet>
             </v-main>

@@ -1,17 +1,48 @@
 <template>
-    <p>여기는 파일이름리스트</p>
-
-    <v-file-input webkitdirectory></v-file-input>
-
+    <div>
+      <input type="file" id="directory_upload" webkitdirectory>
+    </div>
+    <div class="file_list">
+      <p></p>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-  data() {
-    return {
-        folder: null
+ 
+  window.onload = function(){
+  const input = document.querySelector('input');
+  const preview = document.querySelector('.file_list');
+
+    if(input){
+      input.addEventListener('change', showTextFile);
     }
+    
+
+    function showTextFile() {
+      const selectedFiles = input.files;
+      const list = document.createElement('ul');
+      preview.appendChild(list);
+
+      for(const file of selectedFiles) {
+          const listItem = document.createElement('li');
+          const summary = document.createElement('div');
+
+          summary.textContent = file.webkitRelativePath;
+
+          listItem.appendChild(summary);
+          list.appendChild(listItem);
+      }
   }
-}
-  </script>
+  }
+  
+  
+</script>
+
+<style>
+  .file_list{
+    margin-top: 20px; 
+  }
+  li{
+    list-style-type: none;
+  }
+</style>
