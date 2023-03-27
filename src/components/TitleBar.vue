@@ -2,7 +2,7 @@
 
   methods: {
       Close() {
-          window.close();
+          window.close(); 
       }
       }
   }
