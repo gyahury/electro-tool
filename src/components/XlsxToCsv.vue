@@ -1,3 +1,3 @@
 <template>
-    <p>여기는 toCsv</p>
+    <p>추후 기능 추가 예정입니다.</p>
 </template>

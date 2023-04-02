@@ -3,14 +3,14 @@
         <v-layout>
             <v-navigation-drawer floating permanent elevation="3" color="rgb(255, 255, 255)">
                 <v-list nav>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="파일이름 출력" value="filenamelist" @click="toFileNameList"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더 내 파일 엑셀 다운로드" value="filenamelist" @click="toFileNameList"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="To CSV" value="tocsv" @click="toXlsxToCsv"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="To XLSX" value="toxlsx"></v-list-item>
+                    <!-- <v-list-item prepend-icon="mdi-swap-horizontal" title="To XLSX" value="toxlsx"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="To JSON" value="tojson"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 출력" value="imageresol"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 변경" value="chgimgresol"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더 내 파일 분리" value="sepfile"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더/파일명 일괄 변경" value="chafilename"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더/파일명 일괄 변경" value="chafilename"></v-list-item> -->
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 550px;">
