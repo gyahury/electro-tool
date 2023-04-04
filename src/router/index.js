@@ -1,6 +1,7 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
 import FileNameList from '@/components/FileNameList.vue'
 import XlsxToCsv from '@/components/XlsxToCsv.vue'
+import CsvToXlsx from '@/components/CsvToXlsx.vue'
 
 const router = createRouter({
     history : createWebHashHistory(),
@@ -16,6 +17,10 @@ const router = createRouter({
       {
         path:'/XlsxToCsv'
         ,component:XlsxToCsv
+      },
+      {
+        path:'/CsvToXlsx'
+        ,component:CsvToXlsx
       },
     ]
   })
