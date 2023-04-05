@@ -4,7 +4,7 @@
   </div>
   <v-btn class="mt-6" @click="downloadExcelFile(fileNames)">
     <v-icon left>mdi-download</v-icon>
-    Download Excel
+    &nbsp;Download Excel
   </v-btn>
   <div class="mt-6">※ 현재 버전에서는 선택된 폴더 안에 존재하는 모든 파일을 불러옵니다. <br />폴더 안 다른 폴더의 파일도 불러오기 때문에 개수가 많아질 수 있습니다.</div>
 </template>

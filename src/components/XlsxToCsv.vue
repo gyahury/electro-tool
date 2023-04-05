@@ -4,7 +4,7 @@
     </div>
     <v-btn class="mt-6" @click="downloadConvertedFiles(fileNames)">
         <v-icon left>mdi-download</v-icon>
-        Download CSV
+        &nbsp;CONVERT CSV
     </v-btn>
 </template>
   

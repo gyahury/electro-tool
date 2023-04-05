@@ -3,9 +3,12 @@
         <v-layout>
             <v-navigation-drawer floating permanent elevation="3" color="rgb(255, 255, 255)">
                 <v-list nav>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="File Names TO XLSX" value="filenamelist" @click="toFileNameList"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="XLSX To CSV" value="tocsv" @click="toXlsxToCsv"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="CSV To XLSX" value="toxlsx" @click="toCsvToXlsx"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-horizontal" title="File Names To XLSX" value="filenamelist"
+                        @click="toFileNameList"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-horizontal" title="XLSX To CSV" value="tocsv"
+                        @click="toXlsxToCsv"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-horizontal" title="CSV To XLSX" value="toxlsx"
+                        @click="toCsvToXlsx"></v-list-item>
                     <!--<v-list-item prepend-icon="mdi-swap-horizontal" title="To JSON" value="tojson"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 출력" value="imageresol"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 변경" value="chgimgresol"></v-list-item>
@@ -23,19 +26,17 @@
 </template>
 
 <style>
-    .v-list-item--nav .v-list-item-title{
-        color: rgb(95, 94, 94); 
-    }
-    .v-list{
-        margin-top: 10px;
-    } 
-    </style>
+.v-list-item--nav .v-list-item-title {
+    color: rgb(95, 94, 94);
+}
 
-    <script>
-import CsvToXlsx from './CsvToXlsx.vue';
+.v-list {
+    margin-top: 10px;
+}
+</style>
 
-
-    export default {
+<script>
+export default {
 
     methods: {
         toHome() {
@@ -47,9 +48,9 @@ import CsvToXlsx from './CsvToXlsx.vue';
         toXlsxToCsv() {
             this.$router.push("/XlsxToCsv")
         },
-        toCsvToXlsx(){
+        toCsvToXlsx() {
             this.$router.push("/CsvToXlsx")
         }
-        }
     }
+}
 </script>

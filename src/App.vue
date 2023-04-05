@@ -22,13 +22,14 @@ import TitleBar from './components/TitleBar.vue'
 }
 
 @font-face {
-  font-family:'NotoSans';
+  font-family: 'NotoSans';
   src: url('assets/fonts/NotoSansKR-Bold.otf') format('truetype');
 }
+
 /* 영문, 특수문자 폰트 */
 @font-face {
-  font-family:'NotoSans';
+  font-family: 'NotoSans';
   src: url('assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
-  unicode-range: U+0020-007E; 
+  unicode-range: U+0020-007E;
 }
 </style>
