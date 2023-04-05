@@ -4,10 +4,11 @@
     </div>
     <v-btn class="mt-6" @click="downloadConvertedFiles(fileNames)">
         <v-icon left>mdi-download</v-icon>
-        Download XLSX
+        &nbsp;CONVERT XLSX
     </v-btn>
+    <div class="mt-6">※ CSV파일의 문자 '======'를 통해 시트가 나뉘어 변환됩니다.</div>
 </template>
-  
+
 <script>
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
@@ -39,7 +40,9 @@ export default {
             if (this.fileNames.length === 0) {
                 alert('선택된 파일이 없거나 파일이 존재하지 않습니다. 다시 시도해주세요.');
                 return false;
-            } // 각 csv 파일을 xlsx 파일로 변환하고 다운로드합니다.
+            }
+
+            // 각 csv 파일을 xlsx 파일로 변환하고 다운로드합니다.
             for (const file of fileNames) {
                 const reader = new FileReader();
 
@@ -47,12 +50,26 @@ export default {
                 reader.onload = async (e) => {
                     const data = e.target.result;
                     const csvData = new TextDecoder('utf-8').decode(data);
-                    const workbook = XLSX.read(csvData, { type: 'string', bookType: 'xlsx' });
+
+                    // 사용자 정의 구분자(예: '======')를 기준으로 CSV 데이터를 분할
+                    const delimiter = '======';
+                    const chunks = csvData.split(delimiter);
+
+                    const workbook = XLSX.utils.book_new();
+                    chunks.forEach((chunk, index) => {
+                        // CSV 데이터를 2차원 배열로 변환
+                        const rows = chunk.trim().split('\n').map(row => row.split(','));
+
+                        // 배열을 이용하여 시트를 생성하고 워크북에 추가
+                        const sheet = XLSX.utils.aoa_to_sheet(rows);
+                        XLSX.utils.book_append_sheet(workbook, sheet, `Sheet${index + 1}`);
+                    });
 
                     const xlsxData = XLSX.write(workbook, { type: 'binary', bookType: 'xlsx' });
                     const blob = new Blob([s2ab(xlsxData)], { type: 'application/octet-stream' });
                     saveAs(blob, `${file.name.split('.').slice(0, -1).join('.')}.xlsx`);
                 };
+
 
                 // 파일을 읽습니다.
                 reader.readAsArrayBuffer(file);
