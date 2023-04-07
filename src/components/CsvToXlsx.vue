@@ -1,6 +1,8 @@
 <template>
     <div>
-        <input type="file" @change="onFileInputChange" multiple accept=".csv">
+        <h1 class="header">CSV 파일을 XLSX로 변환</h1>
+        <p>CSV 파일을 선택하면 구분자를 기준으로 시트가 나뉘어진 .xlsx 파일을 생성하여 다운로드할 수 있습니다.</p>
+        <input class="mt-8" type="file" @change="onFileInputChange" multiple accept=".csv">
     </div>
     <v-btn class="mt-6" @click="downloadConvertedFiles(fileNames)">
         <v-icon left>mdi-download</v-icon>

@@ -1,6 +1,8 @@
 <template>
     <div>
-        <input type="file" @change="onFileInputChange" multiple accept=".xlsx,.xls">
+        <h1 class="header">엑셀 파일을 CSV로 변환</h1>
+        <p>선택한 엑셀 파일의 시트를 CSV 형식으로 변환하여 다운로드합니다.</p>
+        <input class="mt-8" type="file" @change="onFileInputChange" multiple accept=".xlsx,.xls">
     </div>
     <v-btn class="mt-6" @click="downloadConvertedFiles(fileNames)">
         <v-icon left>mdi-download</v-icon>
