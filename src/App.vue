@@ -13,6 +13,13 @@ import TitleBar from './components/TitleBar.vue'
 </template>
 
 <style>
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
