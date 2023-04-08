@@ -1,4 +1,5 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
+import Home from '@/components/Home.vue'
 import FileNameList from '@/components/FileNameList.vue'
 import XlsxToCsv from '@/components/XlsxToCsv.vue'
 import CsvToXlsx from '@/components/CsvToXlsx.vue'
@@ -9,7 +10,11 @@ const router = createRouter({
   routes: [
     {
       path: '/'
-      , component: FileNameList
+      , component: Home
+    },
+    {
+      path: '/Home'
+      , component: Home
     },
     {
       path: '/FileNameList'

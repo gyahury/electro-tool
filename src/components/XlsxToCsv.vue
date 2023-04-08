@@ -79,9 +79,5 @@ export default {
 </script>
   
 <style>
-div {
-    font-size: 13px;
-    color: rgb(95, 94, 94);
-}
 </style>
   

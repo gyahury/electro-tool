@@ -74,21 +74,4 @@ export default {
 </script>
 
 <style>
-div {
-    font-size: 13px;
-    color: rgb(95, 94, 94);
-}
-.header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #212121; /* 색상을 원하는 대로 변경하세요. */
-}
-
-.header p {
-    font-size: 16px;
-    text-align: center;
-    color: #757575;
-    margin-bottom: 30px;
-}
 </style>

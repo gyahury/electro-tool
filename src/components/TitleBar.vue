@@ -33,4 +33,31 @@ export default {
 .v-toolbar__append {
   -webkit-app-region: no-drag;
 }
+
+div {
+  font-size: 13px;
+  color: rgb(95, 94, 94);
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+.header p {
+  font-size: 16px;
+  text-align: center;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.v-list-item--nav .v-list-item-title {
+    color: rgb(95, 94, 94);
+}
+
+.v-list {
+    margin-top: 10px;
+}
 </style>

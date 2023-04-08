@@ -3,7 +3,7 @@
         <v-layout>
             <v-navigation-drawer floating permanent elevation="3" color="rgb(255, 255, 255)">
                 <v-list nav>
-                    <v-list-item prepend-icon="mdi-home" title="HOME" value="home"></v-list-item>
+                    <v-list-item prepend-icon="mdi-home" title="HOME" value="home" @click="toHome"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="File Names To XLSX" value="filenamelist"
                         @click="toFileNameList"></v-list-item>
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="XLSX To CSV" value="tocsv"
@@ -28,22 +28,14 @@
     </v-card>
 </template>
 
-<style>
-.v-list-item--nav .v-list-item-title {
-    color: rgb(95, 94, 94);
-}
-
-.v-list {
-    margin-top: 10px;
-}
-</style>
+<style></style>
 
 <script>
 export default {
 
     methods: {
         toHome() {
-            this.$router.push("/")
+            this.$router.push("/Home")
         },
         toFileNameList() {
             this.$router.push("/FileNameList")
