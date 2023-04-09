@@ -40,17 +40,10 @@ div {
 }
 
 .header {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #212121;
-}
-
-.header p {
-  font-size: 16px;
-  text-align: center;
-  color: #757575;
-  margin-bottom: 30px;
+  color: #2c2c2c;
 }
 
 .v-list-item--nav .v-list-item-title {

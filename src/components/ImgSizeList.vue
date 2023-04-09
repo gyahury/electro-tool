@@ -1,8 +1,7 @@
 <template>
     <div>
         <h1 class="header">이미지 크기 다운로드</h1>
-        <p>이미지 파일을 선택하면 이미지 파일의 너비와 높이 정보가 포함된 <br/>.xlsx 파일을 생성하여 다운로드할 수 있습니다.</p>
-        <input class="mt-8" type="file" @change="onFileInputChange" multiple accept="image/*">
+        <input class="mt-6" type="file" @change="onFileInputChange" multiple accept="image/*">
     </div>
     <v-btn class="mt-6" @click="downloadImageSizes()">
         <v-icon left>mdi-download</v-icon>

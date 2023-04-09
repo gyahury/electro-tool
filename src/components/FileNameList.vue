@@ -1,8 +1,7 @@
 <template>
   <div>
     <h1 class="header">폴더 내 파일 목록 다운로드</h1>
-    <p>선택한 폴더의 파일 목록을 .xlsx 파일로 생성하여 다운로드할 수 있습니다.</p>
-    <input class="mt-8" type="file" @change="onFileInputChange" webkitdirectory>
+    <input class="mt-6" type="file" @change="onFileInputChange" webkitdirectory>
   </div>
   <v-btn class="mt-6" @click="downloadExcelFile(fileNames)">
     <v-icon left>mdi-download</v-icon>
@@ -55,9 +54,4 @@ export default {
 
 </script>
 
-<style>
-div {
-  font-size: 13px;
-  color: rgb(95, 94, 94);
-}
-</style>
+<style></style>
