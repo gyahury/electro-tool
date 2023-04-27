@@ -2,11 +2,6 @@
 <br>
 electro-tool은 electron + vue.js + vuetify 기반으로 가벼운 데이터 처리를 위한 윈도우 어플리케이션입니다.
 <br><br>
-현재는 개인적인 목적으로 4가지 기능이 구현된 상태입니다.
-
-
-
-
 
 
 ## Project setup
