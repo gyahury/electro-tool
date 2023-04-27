@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/NotoSansKR-Bold.otf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    unicode-range: U+0020-007E;
+  }

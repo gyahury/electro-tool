@@ -13,10 +13,6 @@
                     <v-list-item prepend-icon="mdi-swap-horizontal" title="ImgSize To XLSX" value="imgsizelist"
                         @click="toImgSizeList">
                     </v-list-item>
-                    <!--<v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 출력" value="imageresol"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="이미지 해상도 변경" value="chgimgresol"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더 내 파일 분리" value="sepfile"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-horizontal" title="폴더/파일명 일괄 변경" value="chafilename"></v-list-item> -->
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 480px;">
