@@ -47,10 +47,10 @@ div {
 }
 
 .v-list-item--nav .v-list-item-title {
-    color: rgb(95, 94, 94);
+  color: rgb(95, 94, 94);
 }
 
 .v-list {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 </style>
